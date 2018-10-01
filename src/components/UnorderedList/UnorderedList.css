@@ -1,0 +1,24 @@
+
+ul li{
+    list-style-type: none;
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: Helvetica;
+    line-height: 1.5;
+    text-decoration: none;
+    
+}
+
+ul li:hover{
+    color: white !important;
+}
+
+ul{
+    margin-top: 75px;
+}
+
+.smaller{
+    font-size: 20px;
+    color: white !important;
+}
