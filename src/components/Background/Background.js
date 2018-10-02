@@ -9,32 +9,27 @@ class Background extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      data: [],
+      img: [],
       isLoading: false
     }
   }
 
   componentDidMount(){
-    fetch('http://quotes.rest/qod.json')
+    fetch('https://source.unsplash.com/user/erondu')
     .then(response => response.json())
     .then(response => this.setState({
-      data: response.contents,
-      isLoading: false
+      img: response.data,
     }))
   }
 
   render() {
-    const { isLoading, data } = this.state
-    const dailyQuote = data.map(quote => {
-      return (
-        <div>{quote.success}</div>
-      )
-    })
-
+    const { img } = this.state
     return(
       <figure className="background-image">
-        <p>{dailyQuote}</p>
-        <img className="me" src={me} alt="me2" />
+        {/* <img className="me" src={data} alt="me2" /> */}
+        <img src={img} />
+
+        {/* <p>{data}</p> */}
         <UnorderedList />
       </figure>
     )
