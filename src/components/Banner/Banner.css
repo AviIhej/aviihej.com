@@ -1,6 +1,10 @@
 header{
   margin-left: 40px;
-  margin-top: 3em;
+  margin-top: 0em;
+}
+
+.links{
+  color: black;
 }
 
 header .hello{
