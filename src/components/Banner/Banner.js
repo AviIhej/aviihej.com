@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MyLoader from '../Loader/Loader'
+import BannerCard from '../BannerCard/BannerCard';
 import "./Banner.css";
 
 class Banner extends Component{
@@ -37,11 +38,15 @@ class Banner extends Component{
         }else{
           return (
             <div className="links">
-              <h2 key={item.id}><a target="_blank" href={item.url}>{item.title}</a></h2>
-              <p key={item.id}> Author: {item.author} -  <em key={item.id}>{date}</em></p>
-              <p>{item.selftext}</p>
-              {/* <img src='https://www.redditstatic.com/avatars/avatar_default_12_94E044.png' /> */}
-              {/* <p key={item.id}>{item.full_link}</p> */}
+              
+              <BannerCard 
+              title={item.title} 
+              key={item.id} 
+              url={item.url} 
+              author={item.author} 
+              date={date}
+              selftext={item.selftext}
+              />
             </div>
           )
         }
@@ -49,7 +54,7 @@ class Banner extends Component{
   
     return(
       <div className="hello"> 
-        THis site uses Reddit's api to show the dta you are seeing
+        {/* This site uses Reddit's api to show the dta you are seeing */}
         {/* <MyLoader /> */}
         {data}
 

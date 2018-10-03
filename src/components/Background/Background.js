@@ -1,5 +1,5 @@
 import React from 'react';
-import me from './img/me2.png';
+// import me from './img/me2.png';
 import UnorderedList from '../UnorderedList/UnorderedList';
 
 import "./Background.css";
@@ -14,21 +14,19 @@ class Background extends React.Component {
     }
   }
 
-  componentDidMount(){
-    fetch('https://source.unsplash.com/user/erondu')
-    .then(response => response.json())
-    .then(response => this.setState({
-      img: response.data,
-    }))
-  }
+  // componentDidMount(){
+  //   fetch('https://source.unsplash.com/user/erondu')
+  //   .then(response => response.json())
+  //   .then(response => this.setState({
+  //     data: response,
+  //   }))
+  // }
 
   render() {
-    const { img } = this.state
+    // const { isLoading, data } = this.state
     return(
       <figure className="background-image">
-        {/* <img className="me" src={data} alt="me2" /> */}
-        <img src={img} />
-
+        <img className="me" src={"https://source.unsplash.com/user/erondu/150x150"} alt="me" />
         {/* <p>{data}</p> */}
         <UnorderedList />
       </figure>
