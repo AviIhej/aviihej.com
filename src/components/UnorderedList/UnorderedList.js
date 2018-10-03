@@ -33,15 +33,14 @@ class UnorderedList extends Component{
                     <h3 style={{color: 'white'}}>{data}</h3>
                     <br />
                     <br />
-                  <a href="https://www.standardresume.co/avielihejirika" target="_blank">  <li style={{color:'white'}} className="smaller">Resume</li> </a>
-                   <a> <li style={{color:'white'}} className="smaller">Projects</li></a>
-                  <a>  <li style={{color:'white'}} className="smaller">Pinboard</li> </a>
-                 <a href={"www.google.com"}>   <li style={{color:'white'}} className="smaller">Github</li> </a>
+                    <a href="https://www.standardresume.co/avielihejirika">  <li style={{color:'white'}} className="smaller">Resume</li> </a>
+                    <a><li style={{color:'white'}} className="smaller">Projects</li></a>
+                    <a><li style={{color:'white'}} className="smaller">Pinboard</li></a>
+                    <a href={"https://github.com/AviIhej/"}>   <li style={{color:'white'}} className="smaller">Github</li> </a>
                     <br />
-                    
-                    <li style={{color:'white'}} className="smaller"><a style={{color:'white'}} href="https://hacks.mozilla.org/2015/03/this-api-is-so-fetching/">Eventster</a></li>
+                    <li style={{color:'white'}} className="smaller"><a style={{color:'white'}} href="https://github.com/AviIhej/eventster">Eventster</a></li>
                     <br />
-                    <li className="love-note">Built with ❤️ by me with React ⚡</li>
+                    <li className="love-note">Built with <span aria-label="img" role="img">❤️</span> by me with React ⚡</li>
                 </ul>
             </div>
         )
