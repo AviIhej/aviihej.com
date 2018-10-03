@@ -7,9 +7,12 @@ ul li{
     font-family: Helvetica;
     line-height: 1.5;
     text-decoration: none;
-    
+    font-family: 'Lato', sans-serif;
 }
-
+.love-note{
+    font-size: 10px;
+    color: pink
+}
 ul li:hover{
     color: white !important;
 }

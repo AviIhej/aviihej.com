@@ -1,10 +1,10 @@
 {
-  "name": "brandonsueur",
+  "name": "aviihej",
   "version": "0.1.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/brandonsueur/brandonsueur.fr.git"
+    "url": "https://github.com/AviIhej/aviihej.com"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",

@@ -1,6 +1,6 @@
 header{
   margin-left: 40px;
-  margin-top: 0em;
+  /* margin-top: 0em; */
 }
 
 .links{
@@ -29,7 +29,7 @@ header h1{
 header h1 span{
   color: #D3D3D3;
 
-  font-family: "Lato";
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 45px;
 }

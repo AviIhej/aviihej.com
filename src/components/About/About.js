@@ -21,7 +21,22 @@ class About extends React.Component {
           <h2>My Skills</h2>
 
           <div className="content">
-            <p>Mon ensemble de compétences est vaste et je me réjouis de tous les défis qui me sont lancés. Je n'arrêterai jamais d'apprendre, mon objectif actuel est de développer au maximum mes compétences pour couvrir n'importe quel projet. J'ai un vif intérêt pour la création de site internet rapide, beau et fonctionnelle.</p>
+            <p>
+            I am an aspiring full stack web developer with a solid 
+            understanding of users’ perspectives. I love building
+             immersive and beautiful web applications and user 
+             interfaces through carefully crafted code and user
+              centric design. I am a hard working all around great guy who is passionate about
+               building things that are clever and uniquely simplistic. 
+              
+            </p>
+            <p>
+              Aside from coding, I love to stay active and get my blood flowing! I like to
+              work out, travel, play basketball, and hike, fish - you name it. Above everything else, I LOVE food with a passion and 
+              try to taste all of the foods of the world whenever I travel. 
+            </p>
+            <p>Below are some of the
+              technologies that I am skilled with:</p>
 
             <Tags />
           </div>

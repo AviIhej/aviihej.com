@@ -6,15 +6,19 @@ const socials = [
   {
     name: "linkedin",
     icon: "fab fa-linkedin-in",
-    url: "https://www.linkedin.com/in/brandonsueur/"
+    url: "https://www.linkedin.com/in/aviel-ihejirika/"
   },{
     name: "Twitter",
-    icon: "fab fa-twitter",
-    url: "https://twitter.com/_brandonsueur"
+    icon: "fab fa-github",
+    url: "https://github.com/AviIhej"
+  },{
+    name: "Reddit",
+    icon: "fab fa-reddit",
+    url: "https://www.reddit.com/user/aviihej/"
   },{
     name: "YouTube",
-    icon: "fab fa-youtube",
-    url: "https://www.youtube.com/channel/UCk3deqZbjdsTN3k3GComLCg"
+    icon: "fab fa-behance",
+    url: "https://www.behance.net/aviihejedc2"
   }
 ];
 

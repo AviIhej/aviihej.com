@@ -4,6 +4,10 @@ import "./Tags.css";
 
 const tags = [
   {
+    name: "JaveScript",
+    url: "https://www.javascript.com/"
+  },
+  {
     name: "Node.js",
     url: "https://nodejs.org/"
   },
@@ -12,12 +16,12 @@ const tags = [
     url: "https://reactjs.org/"
   },
   {
-    name: "Laravel",
-    url: "https://laravel.com/"
+    name: "Express.js",
+    url: "http://expressjs.com/"
   },
   {
-    name: "CakePHP",
-    url: "https://cakephp.org/"
+    name: "GraphQL",
+    url: "https://graphql.org/"
   }
 ];
 
