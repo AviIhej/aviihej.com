@@ -7,6 +7,8 @@ import Menu from "../Menu/Menu";
 import Banner from "../Banner/Banner";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+import AboutSite from "../AboutSite/AboutSite";
+import Projects from '../Projects/Projects';
 
 // css
 import "./App.css";
@@ -18,9 +20,9 @@ class App extends React.Component {
         <Router>
           <div>
             <div className="split-background">
-              <Link to={'/'}>
+              {/* <Link to={''}> */}
                 <Background />
-              </Link>
+              {/* </Link> */}
             </div>
 
             <main className="split-container">
@@ -30,6 +32,8 @@ class App extends React.Component {
                 <Route exact path='/' component={Banner} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/contact' component={Contact} />
+                <Route exact path='/siteinfo' component={AboutSite} />
+                <Route exact path='/projects' component={Projects} />
               </Switch>
             </main>
           </div>

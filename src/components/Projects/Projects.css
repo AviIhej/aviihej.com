@@ -1,0 +1,13 @@
+.projects{
+    font-family: 'lato', 'sans-serif';
+}
+
+li{
+    list-style-type: none;
+}
+
+.uses{
+    color: #9e9993;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

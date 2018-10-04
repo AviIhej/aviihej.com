@@ -12,6 +12,8 @@ class Menu extends React.Component {
         <ul className="links">
           <li><Link to={'about'}>About Me</Link></li>
           <li><Link to={'contact'}>Contact</Link></li>
+          <li><Link to={'siteinfo'}>Site Info</Link></li>
+          {/* <li><Link to={'projects'}>Projects</Link></li> */}
         </ul>
 
         <div className="align-right">

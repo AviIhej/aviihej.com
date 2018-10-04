@@ -1,11 +1,11 @@
-nav.menu{ margin: 25px ;
-margin-top: 0px;
+nav.menu{ 
+margin-top: -50px;
   }
 
 nav.menu ul{
   display: inline-block;
   list-style: none;
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 nav.menu ul.links li{
@@ -51,13 +51,38 @@ nav.menu ul.links li a:hover::before {
   left:0%;
 }
 
-@media (max-width: 574px){
+@media (max-width: 425px){
   nav.menu ul.links li a{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   nav.menu ul.links li{
     display: inline-block;
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 375px){
+  nav.menu ul.links li a{
+    font-size: 13px;
+  }
+
+  nav.menu ul.links li{
+    display: inline-block;
+    margin: 0 0px;
+  }
+}
+
+@media (max-width: 320px){
+  nav.menu ul.links li a{
+    font-size: 10px;
+  }
+
+  nav.menu ul.links li{
+    display: inline-block;
+    margin: 0 0px;
+  }
+  nav.menu ul{
+    padding-left: 5px;
   }
 }

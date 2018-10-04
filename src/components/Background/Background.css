@@ -19,7 +19,19 @@ figure.background-image{
   max-height: 150px;
   margin-left: 25%;
   margin-top: 30%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+.me:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 
 figure.background-image img{
   background-color:#2a2a2a;

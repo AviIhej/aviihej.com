@@ -10,7 +10,7 @@ class Background extends React.Component {
     // const { isLoading, data } = this.state
     return(
       <figure className="background-image">
-        <a href="https://www.google.com"><img className="me" src={"https://source.unsplash.com/user/erondu/150x150"} alt="me" /></a>
+        <a href="/"><img className="me" src={"https://source.unsplash.com/user/erondu/150x150"} alt="me" /></a>
         <UnorderedList />
       </figure>
     )

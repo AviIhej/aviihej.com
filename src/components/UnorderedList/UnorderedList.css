@@ -9,6 +9,7 @@ ul li{
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
+
 .love-note{
     font-size: 10px;
     color: pink
@@ -26,4 +27,6 @@ ul{
 .smaller{
     font-size: 20px;
     color: white !important;
+    font-weight: 100;
+
 }

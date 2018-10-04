@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
 import './UnorderedList.css'
 
 
@@ -29,16 +29,17 @@ class UnorderedList extends Component{
         return(
             <div>
                 <br />
-                <ul>
-                    <h3 style={{color: 'white'}}>{data}</h3>
+                <ul className="list">
+                    <h3 className="list" style={{color: 'white', fontFamily: 'Lato', fontWeight:'300'}}>{data}</h3>
                     <br />
                     <br />
-                    <a href="https://www.standardresume.co/avielihejirika">  <li style={{color:'white'}} className="smaller">Resume</li> </a>
-                    <a><li style={{color:'white'}} className="smaller">Projects</li></a>
-                    <a><li style={{color:'white'}} className="smaller">Pinboard</li></a>
-                    <a href={"https://github.com/AviIhej/"}>   <li style={{color:'white'}} className="smaller">Github</li> </a>
+                    <a href="https://www.standardresume.co/avielihejirika" target="_blank" rel="noopener noreferrer">  <li style={{color:'white'}} className="smaller">Resume</li> </a>
+                    {/* <a href=""><li style={{color:'white'}} target="_blank" rel="noopener noreferrer" className="smaller">Projects</li></a> */}
+                    <Link style={{color:'white'}} to={'projects'} className="smaller"><span style={{fontFamily: 'Lato'}}>Projects</span></Link>
+                    <a href="https://www.reddit.com/user/aviihej/" target="_blank" rel="noopener noreferrer"><li style={{color:'white'}} className="smaller">Reddit</li></a>
+                    <a href="https://github.com/AviIhej/" target="_blank" rel="noopener noreferrer">   <li style={{color:'white'}} className="smaller">Github</li> </a>
                     <br />
-                    <li style={{color:'white'}} className="smaller"><a style={{color:'white'}} href="https://github.com/AviIhej/eventster">Eventster</a></li>
+                    <li className="smaller"><a style={{color:'white'}} href="https://github.com/AviIhej/eventster" target="_blank" rel="noopener noreferrer">Eventster</a></li>
                     <br />
                     <li className="love-note">Built with <span aria-label="img" role="img">❤️</span> by me with React ⚡</li>
                 </ul>

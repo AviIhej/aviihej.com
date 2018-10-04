@@ -5,7 +5,7 @@ ul.socials{
 
 ul.socials li{
   display: inline-block;
-  margin: 0 13px;
+  margin: 0px 13px;
 }
 
 ul.socials li a{
@@ -15,3 +15,16 @@ ul.socials li a{
 
 ul.socials li a i{ transition-duration: 0.2s }
 ul.socials li a i:hover{ transform: scale(1.2) }
+
+@media(max-width: 425px){
+  ul.socials li{
+    margin: 0px 0px;
+    padding: 0px 5px 0px 5px;
+  }
+}
+@media(max-width: 320px){
+  ul.socials li a{
+    font-size: 10px;
+    color: #000;
+  }
+}
