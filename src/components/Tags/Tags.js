@@ -4,7 +4,7 @@ import "./Tags.css";
 
 const tags = [
   {
-    name: "JaveScript",
+    name: "JavaScript",
     url: "https://www.javascript.com/"
   },
   {
@@ -22,6 +22,10 @@ const tags = [
   {
     name: "GraphQL",
     url: "https://graphql.org/"
+  },
+  {
+    name: "REST",
+    url: "https://www.codecademy.com/articles/what-is-rest"
   }
 ];
 
