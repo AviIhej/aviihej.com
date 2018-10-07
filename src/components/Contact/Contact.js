@@ -4,6 +4,19 @@ import "./Contact.css";
 
 class Contact extends React.Component {
   render() {
+    (function(d, h, m){
+      var js, fjs = d.getElementsByTagName(h)[0];
+      if (d.getElementById(m)){return;}
+      js = d.createElement(h); js.id = m;
+      js.onload = function(){
+          window.makerWidgetComInit({
+          position: "right",          
+          widget: "5ncb2ogrosm3tzu1-abwamrht980x6fqu-na6lpwwvwivophkx"                
+      })};
+      js.src = "https://makerwidget.com/js/embed.js";
+      fjs.parentNode.insertBefore(js, fjs)
+     }(document, "script", "dhm"))
+
     return(
       <div className="container">
         <section className="contact" id="contact">
@@ -11,7 +24,7 @@ class Contact extends React.Component {
 
           <div className="content">
             <p>
-            Do you have a project you want to talk about? A question ? An event you would like me to talk about? Or do you 
+            Do you have a project you want to talk about? A question ? An event you would like me to speak at? Or do you 
             just want to say hello? You can contact me by email below or find me online on my various social networks. It's
              always great to talk and make new connections.
             </p>
@@ -20,9 +33,9 @@ class Contact extends React.Component {
               <a href="mailto:aviihej@gmail.com">aviihej@gmail.com</a>
             </div>
 
-            <h2>Services</h2>
+            {/* <h2>Services</h2> */}
 
-            <div className="content">
+            {/* <div className="content">
               <p>
                 
               </p>
@@ -37,7 +50,7 @@ class Contact extends React.Component {
                 Je n'accepterai votre projet que si je crois que je peux créer de la valeur pour votre
                 entreprise et que les avantages seront supérieurs à l'argent que vous dépensez.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 
