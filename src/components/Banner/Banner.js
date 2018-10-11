@@ -59,6 +59,7 @@ class Banner extends Component{
               author={item.author} 
               date={date}
               selftext={item.selftext}
+              // comments={item.num_comments}
               />
             </div>
           )

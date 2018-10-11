@@ -33,8 +33,8 @@ class AboutSite extends Component {
 
           <div className="content">
             <p>
-              I wanted to do something different for my personal site I diddnt just want a 
-              site where all of the data was hard coded in some basic HTML page,
+              I wanted to do something different for my personal site. I diddn't just want to create a 
+              site that had hard coded data in some basic HTML page,
               which is why I completely rebuilt my personal website in React <span role="img" aria-label="lightning">⚡</span>.
               
               I wanted to display all of the links that I share and the articles that 
