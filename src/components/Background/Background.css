@@ -13,6 +13,32 @@ figure.background-image{
   border: 0;
 }
 
+#button{
+  /* display:inline-block; */
+  padding: 0.38em 1.2em;
+  /* border:0.1em solid black; */
+  /* margin:0 0.3em 0.3em 0; */
+  margin-top: 5px;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  font-weight: 300;
+  color: white;
+  background-color: #2a2a2a;
+  border: 1px solid white;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+#button:hover{
+  background-color: white;
+  color: black;
+}
+
+.vp{
+  margin-top: 25px;
+  float: right;
+}
+
 .me{
   border-radius: 50%;
   max-width: 150px;

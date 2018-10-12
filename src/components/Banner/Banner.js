@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MyLoader from '../Loader/Loader'
 import BannerCard from '../BannerCard/BannerCard';
+// import Button from '../Button/Button';
 import "./Banner.css";
 
 class Banner extends Component{
@@ -9,7 +10,9 @@ class Banner extends Component{
     super(props)
     this.state = {
       items: [],
-      loading: true
+      loading: true,
+      count: 0,
+      disabled: false
     }
   }
 
@@ -20,6 +23,13 @@ class Banner extends Component{
         items: result.data, 
         loading: false
       }))
+  }
+
+  handleButtonClick = () => {
+    this.setState({
+      count: this.state.count + 1,
+      disabled: true
+    })
   }
 
   render() { 
@@ -62,62 +72,22 @@ class Banner extends Component{
               // comments={item.num_comments}
               />
             </div>
-          )
-        }
-    })
-  
-    return(
+            
+            )
+          }
+        })
+        
+        return(
       <div className="hello"> 
         {/* This site uses Reddit's api to show the dta you are seeing */}
         {/* <MyLoader /> */}
         {data}
-
+        {/* <a href="https://github.com/you" style={{position: 'absolute', top:'0', right: '0', border: '0'}}>Come see me</a> */}
+            {/* <button style={{position: 'absolute', top:'0', left: '0', fontFamily: 'Lato'}} disabled={this.state.disabled} id='button' onClick={() => this.handleButtonClick()}>Click to let me know you visited <span role='img' aria-label='fire'>🔥</span> </button> */}
+            {/* <h4 style={{position: 'absolute', top:'0', right: '0', border: '0'}}>Visitor Points: {this.state.count} <span role='img' aria-label='fire'>🔥</span></h4> */}
       </div>
     )
   }
 }
 
-
-
 export default Banner;
-
-  // const data = [
-    //   {
-    //     postId: 1,
-    //     id: 1,
-    //     name: "id labore ex et quam laborum",
-    //     email: "Eliseo@gardner.biz"
-    //   },
-    //   {
-    //     postId: 1,
-    //     id: 2,
-    //     name: "quo vero reiciendis velit similique earum",
-    //     email: "Jayne_Kuhic@sydney.com"
-    //   },
-    //   {
-    //     postId: 1,
-    //     id: 3,
-    //     name: "odio adipisci rerum aut animi",
-    //     email: "Nikita@garfield.biz"
-    //   }
-    // ]
-
-    // const namesList = data.map(post => {
-    //   return(
-    //    <h1 key={post.id}>{post.name}</h1>
-    //   )
-    // })
-
-          // <header>
-
-      //   <div className="hello">Hello! I'm</div>
-      //   {/* <ul>{namesList}</ul> */}
-      //   <h1>Avi Ihej <span>&</span><br/>
-      //   I make things
-      //   </h1>
-        
-      //   <div className="available">
-      //     <div className="circle"></div>
-      //    Get in touch with me, I like questions: aviihej@gmail.com
-      //   </div>
-      // </header>
