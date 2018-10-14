@@ -2,7 +2,6 @@ import React from 'react';
 
 import "./Tags.css";
 
-
 const tags = [
   {
     name: "JavaScript",
