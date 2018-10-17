@@ -2,6 +2,7 @@ import React from 'react';
 
 import "./Tags.css";
 //Mandatory commit for every day
+
 const tags = [
   {
     name: "JavaScript",
