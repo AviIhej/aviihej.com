@@ -9,6 +9,3 @@ Do not hesitate, it's free !
 
 - 💬  Chat : Join me on [Discord](aviihej@gmail.com)
 - 📣  News : Follow me on [Reddit](https://www.reddit.com/user/aviihej/)
-
-### 📖  License
-The project is available as open source under the terms of the MIT License.
