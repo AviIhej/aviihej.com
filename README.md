@@ -7,5 +7,5 @@
 ### 😊  Talk to me
 Do not hesitate, it's free !
 
-- 💬  Email : Join me on [Discord](aviihej@gmail.com)
+- 💬  Email : Join me on [Email](aviihej@gmail.com)
 - 📣  News : Follow me on [Reddit] aviihej(https://www.reddit.com/user/aviihej/)

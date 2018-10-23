@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MyLoader from '../Loader/Loader'
 import BannerCard from '../BannerCard/BannerCard';
 // import Button from '../Button/Button';
+import Test from '../Test/Test';
 import "./Banner.css";
 
 class Banner extends Component{
@@ -52,13 +53,7 @@ class Banner extends Component{
        const data = items.map(item => {
        const date = Date(item.created_utc) //convert utc to standard time
 
-        if(loading){
-          return (
-            <div>
-              <MyLoader />
-            </div>
-          )
-        }else{
+       if(!items) return <MyLoader />
           return (
             <div className="links">
               
@@ -71,10 +66,11 @@ class Banner extends Component{
               selftext={item.selftext}
               // comments={item.num_comments}
               />
+              <Test username="mike"/>
             </div>
             
             )
-          }
+          
         })
         
         return(
