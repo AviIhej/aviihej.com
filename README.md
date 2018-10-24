@@ -9,3 +9,6 @@ Do not hesitate, it's free !
 
 - 💬  Email : Join me on [Email](aviihej@gmail.com)
 - 📣  News : Follow me on [Reddit] aviihej(https://www.reddit.com/user/aviihej/)
+Day 1 #365
+Day 2 #365
+
