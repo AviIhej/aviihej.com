@@ -1,0 +1,15 @@
+
+.button {
+    font: 13px/22px Helvetica;
+	overflow: hidden;
+    background: #000;
+    color: white;
+    left: 50%;
+    float: left; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    color:black
+}

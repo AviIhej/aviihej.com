@@ -48,7 +48,8 @@ class Banner extends Component{
       fjs.parentNode.insertBefore(js, fjs)
      }(document, "script", "dhm"))
 
-    const { loading, items } = this.state
+    // const { loading, items } = this.state
+    const { items } = this.state
 
        const data = items.map(item => {
        const date = Date(item.created_utc) //convert utc to standard time

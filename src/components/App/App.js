@@ -10,6 +10,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import AboutSite from "../AboutSite/AboutSite";
 import Projects from '../Projects/Projects';
+import GitRelic from '../GitRelic/GitRelic';
 
 // css
 import "./App.css";
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <Route exact path='/contact' component={Contact} />
                 <Route exact path='/siteinfo' component={AboutSite} />
                 <Route exact path='/projects' component={Projects} />
+                <Route exact path='/gitrelic' component={GitRelic} />
               </Switch>
             </main>
           </div>
