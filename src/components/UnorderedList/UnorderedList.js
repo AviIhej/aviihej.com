@@ -30,7 +30,7 @@ class UnorderedList extends Component{
             <div>
                 <br />
                 <ul className="list">
-                    <h3 className="list" style={{color: 'white', fontFamily: 'Lato', fontWeight:'300'}}>{data}</h3>
+                    <h5 className="list" style={{color: 'white', fontFamily: 'Lato', fontWeight:'300'}}>{data}</h5>
                     <br />
                     <br />
                     <a href="https://www.standardresume.co/avielihejirika" target="_blank" rel="noopener noreferrer">  <li style={{color:'white'}} className="smaller">Resume</li> </a>

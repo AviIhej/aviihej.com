@@ -7,13 +7,23 @@ class GitRelic extends Component {
     constructor(props){
         super(props);
         this.state = {
-            name: '',
+           name: '',
            username: '',
            id: '',
            public_repos: '',
            followers: '',
-           avatar: ''
+           avatar: '',
+           myData: []
         }
+    }
+
+    // Get my info
+    componentDidMount (){
+        fetch('https://api.github.com/users/aviihej')
+        .then(response => response.json())
+        .then(response => this.setState({
+            myData: response
+        }))
     }
 
     getUser(username){
@@ -36,26 +46,42 @@ class GitRelic extends Component {
             public_repos: user.public_repos,
             followers: user.followers,
             avatar_url: user.avatar_url,
-            
-            
         })
     }
 
     render(){
-        // let user
-
+        
+        const { myData } = this.state;
+        
         return(
-            <div>
-                <form onSubmit={e => this.handleSubmit(e)}>
-                    <input ref='username' type='text' placeholder='username' />
-                </form>
-                  <h1>Name: {this.state.name}</h1> 
-                  <h1>Username: {this.state.username}</h1> 
-                  <h1>ID: {this.state.id}</h1> 
-                  <h1>Public Repos: {this.state.public_repos}</h1> 
-                  <h1>Followers: {this.state.followers}</h1> 
-                  <img style={{maxWidth: '150px', maxHeight: '150px'}} src={this.state.avatar_url} alt='avatar'/>
-
+            <div className="finder_container">
+                <h2>GitHub Stats</h2>
+                <ul>
+                    <li>
+                        <div className="find_me">
+                            <h4>Github Name: {myData.name}</h4> 
+                            <h4>Username: {myData.login}</h4> 
+                            <h4>ID: {myData.id}</h4> 
+                            <h4>Public Repos: {myData.public_repos}</h4> 
+                            <h4>Followers: {myData.followers}</h4> 
+                            <img className="profile_pic_me" style={{maxWidth: '150px', maxHeight: '150px'}} src={myData.avatar_url} alt='avatar'/>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="find_users">
+                            <p style={{color:'black'}}>Search for any github user with their github username:</p>
+                            <form onSubmit={e => this.handleSubmit(e)}>
+                                <input ref='username' type='text' placeholder='GitHub Username' />
+                            </form>
+                            <h4>Github Name: {this.state.name}</h4> 
+                            <h4>Username: {this.state.username}</h4> 
+                            <h4>ID: {this.state.id}</h4> 
+                            <h4>Public Repos: {this.state.public_repos}</h4> 
+                            <h4>Followers: {this.state.followers}</h4> 
+                            <img className="profile_pic_users" style={{maxWidth: '150px', maxHeight: '150px'}} src={this.state.avatar_url} alt='avatar'/>
+                        </div>
+                    </li>
+                </ul>
             </div>
         )
     }

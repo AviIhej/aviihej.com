@@ -13,7 +13,7 @@ class Menu extends React.Component {
           <li><Link to={'about'}>About Me</Link></li>
           <li><Link to={'contact'}>Contact</Link></li>
           <li><Link to={'siteinfo'}>How I Built This Site</Link></li>
-          <li><Link to={'gitrelic'}>GitRelic</Link></li>
+          <li><Link to={'gitrelic'}>Github Stats</Link></li>
           {/* <li><Link to={'projects'}>Projects</Link></li> */}
         </ul>
 

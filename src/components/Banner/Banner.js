@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MyLoader from '../Loader/Loader'
+// import MyLoader from '../Loader/Loader'
 import BannerCard from '../BannerCard/BannerCard';
 // import Button from '../Button/Button';
-import Test from '../Test/Test';
+// import Test from '../Test/Test';
 import "./Banner.css";
 
 class Banner extends Component{
@@ -54,10 +54,9 @@ class Banner extends Component{
        const data = items.map(item => {
        const date = Date(item.created_utc) //convert utc to standard time
 
-       if(!items) return <MyLoader />
+      //  if(!items) return <MyLoader />
           return (
             <div className="links">
-              
               <BannerCard 
               title={item.title} 
               key={item.id} 
@@ -67,9 +66,8 @@ class Banner extends Component{
               selftext={item.selftext}
               // comments={item.num_comments}
               />
-              <Test username="mike"/>
+              {/* <Test username="mike"/> */}
             </div>
-            
             )
           
         })
