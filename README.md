@@ -1,4 +1,4 @@
-# Avi Ihej - Web Developer
+# Avi Ihej - Software Developer
 
 👋 My name is **Avi Ihej** and I'm an enthusiastic developer with a big passion for the digital world and what we developers can do to make it bigger and stronger.
 
