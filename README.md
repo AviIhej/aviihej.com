@@ -1,4 +1,4 @@
-# Avi Ihej - Web Developer
+# Avi Ihej - Software Developer
 
 👋 My name is **Avi Ihej** and I'm an enthusiastic developer with a big passion for the digital world and what we developers can do to make it bigger and stronger.
 
@@ -20,7 +20,10 @@ Day 8 #365
 Day 9 #365
 Day 10 #365
 Day 11 #365
+<<<<<<< HEAD
 Day 12 #365
 Day 13 #365
 Day 14 #365
 Day 15 #365
+=======
+>>>>>>> 7231704895ab8c15c225f681d18630d486f43827
