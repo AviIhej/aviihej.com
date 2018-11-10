@@ -11,6 +11,7 @@ figure.background-image {
   margin: 0;
   /* background-color:#2a2a2a; */
   background-image: url("https://i.imgur.com/Kb6sC93.gif");
+  /* background-image: url("https://freefrontend.com/assets/img/css-loaders/animated-flippreloader-scss.gif"); */
   background-size: auto;
   background-size: auto 100%;
   background-repeat: no-repeat;
