@@ -46,7 +46,7 @@ class Banner extends Component{
       })};
       js.src = "https://makerwidget.com/js/embed.js";
       fjs.parentNode.insertBefore(js, fjs)
-     }(document, "script", "dhm"))
+  }(document, "script", "dhm"))
 
     // const { loading, items } = this.state
     const { items } = this.state
